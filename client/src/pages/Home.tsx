@@ -159,6 +159,14 @@ export default function Home() {
                 size="lg"
                 variant="outline"
                 className="border-border hover:bg-secondary"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/manus-storage/Tarcisse_Ndjibu_Resume1_ba923d1f.pdf';
+                  link.download = 'Tarcisse_Ndjibu_Resume.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
               >
                 Download Resume
               </Button>
@@ -264,20 +272,27 @@ export default function Home() {
               </p>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href="https://github.com/tarcisse-ndjibu"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-secondary hover:bg-accent hover:text-white transition-colors"
+                  title="GitHub"
                 >
                   <Github className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/tarcisse-ndjibu-5a0438294"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-secondary hover:bg-accent hover:text-white transition-colors"
+                  title="LinkedIn"
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="mailto:ndjibutarcisse@gmail.com"
                   className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-secondary hover:bg-accent hover:text-white transition-colors"
+                  title="Email"
                 >
                   <Mail className="h-5 w-5" />
                 </a>

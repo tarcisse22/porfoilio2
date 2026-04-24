@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, ExternalLink, Github } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, Mail } from "lucide-react";
 import { useRoute, useLocation } from "wouter";
 
 /**
@@ -272,16 +272,24 @@ export default function ProjectDetail() {
                 {project.fullDescription}
               </p>
               <div className="flex gap-4 flex-wrap">
-                <Button className="bg-accent hover:bg-blue-600 text-white">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  View Live
-                </Button>
-                {project.github && (
-                  <Button variant="outline" className="border-border">
+                <a
+                  href="https://github.com/tarcisse-ndjibu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="bg-accent hover:bg-blue-600 text-white">
                     <Github className="mr-2 h-4 w-4" />
                     View Code
                   </Button>
-                )}
+                </a>
+                <a
+                  href="mailto:ndjibutarcisse@gmail.com"
+                >
+                  <Button variant="outline" className="border-border">
+                    <Mail className="mr-2 h-4 w-4" />
+                    Contact Me
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="relative">
