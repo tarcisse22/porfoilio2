@@ -1,0 +1,119 @@
+{
+  "projects": [
+    {
+      "id": "auto-shop",
+      "title": "Auto Shop Inventory Manager",
+      "shortDescription": "Full-stack inventory management system for auto service shops",
+      "fullDescription": "A full-stack web application for managing auto service shop inventory. Built with React and Firebase, it enables shop staff to track vehicles, manage service records, and handle inventory in real time. Features secure authentication with role-based access control, real-time data synchronization, and a responsive design that works across desktop and mobile devices.",
+      "features": [
+        "Secure login and registration via Firebase Auth with role-based access control",
+        "Add, edit, view, and delete vehicle records with full CRUD functionality",
+        "Live data sync powered by Firestore; changes reflect instantly across sessions",
+        "Clean, mobile-friendly UI that works across desktop and mobile devices"
+      ],
+      "technologies": ["React", "Vite", "Firebase Firestore", "Firebase Auth", "CSS3"],
+      "techCategories": {
+        "Frontend": ["React", "Vite", "CSS3"],
+        "Backend": ["Firebase Firestore", "Firebase Auth"],
+        "Tools": ["npm"]
+      },
+      "metrics": {
+        "Users": "Shop staff teams",
+        "Data Points": "Vehicle records & service history",
+        "Real-time Sync": "Firestore",
+        "Performance": "Instant updates"
+      },
+      "role": "Full-Stack Developer",
+      "timeline": "2026",
+      "github": "https://github.com/tarcisse22/Auto-Shop-frontend",
+      "live": "https://auto-shop-frontend-zeta.vercel.app"
+    },
+    {
+      "id": "health-tracker",
+      "title": "HabitLoop - Daily Health Tracker",
+      "shortDescription": "Web application for tracking daily health habits and wellness",
+      "fullDescription": "Built a responsive habit tracking app enabling users to log exercise, water intake, and sleep across mobile and desktop with adaptive grid layouts and persistent localStorage state. Engineered dynamic streak calculation logic and weekly summary visualizations, driving a 3x improvement in user retention during peer testing versus static spreadsheet alternatives.",
+      "features": [
+        "Log daily habits including exercise, water intake, and sleep",
+        "Track habit streaks with dynamic calculation logic",
+        "View weekly summary visualizations and progress",
+        "Persistent data storage using browser localStorage",
+        "Responsive design for mobile and desktop"
+      ],
+      "technologies": ["JavaScript", "HTML5", "CSS3", "LocalStorage API"],
+      "techCategories": {
+        "Frontend": ["JavaScript", "HTML5", "CSS3"],
+        "Storage": ["LocalStorage API"],
+        "Tools": ["Browser APIs"]
+      },
+      "metrics": {
+        "User Retention": "3x improvement vs spreadsheets",
+        "Tracked Habits": "Exercise, water intake, sleep",
+        "Data Persistence": "Browser localStorage",
+        "Responsiveness": "Mobile & desktop optimized"
+      },
+      "role": "Frontend Developer",
+      "timeline": "2026",
+      "github": "https://github.com/tarcisse22/health-habit-tracker"
+    },
+    {
+      "id": "interview-prep",
+      "title": "TechPrep - Interview Preparation Platform",
+      "shortDescription": "Interview question bank with curated coding problems",
+      "fullDescription": "Developed a categorized question bank covering arrays, trees, graphs, dynamic programming, and system design with 100+ curated problems and difficulty tagging. Implemented client-side filtering and session-based progress tracking with 0 backend dependencies, achieving sub-50ms render performance.",
+      "features": [
+        "Random interview question generator",
+        "Multiple topics: Arrays, Strings, Binary Trees",
+        "Show solution button for learning and review",
+        "Clean and simple UI",
+        "Beginner-friendly algorithm examples",
+        "100+ curated problems with difficulty levels"
+      ],
+      "technologies": ["JavaScript", "HTML5", "CSS3"],
+      "techCategories": {
+        "Frontend": ["JavaScript", "HTML5", "CSS3"],
+        "Performance": ["Sub-50ms render time"],
+        "Tools": ["Client-side filtering"]
+      },
+      "metrics": {
+        "Questions": "100+ curated problems",
+        "Topics": "Arrays, Strings, Trees, Graphs, DP",
+        "Performance": "Sub-50ms render time",
+        "Backend": "Zero backend dependencies"
+      },
+      "role": "Frontend Developer",
+      "timeline": "2026",
+      "github": "https://github.com/tarcisse22/Interview-Prep-App"
+    },
+    {
+      "id": "job-tracker",
+      "title": "Job Application Tracker",
+      "shortDescription": "Dashboard for organizing and tracking job applications",
+      "fullDescription": "A job application tracker that reduces the stress of job searching by organizing all application data into one actionable dashboard. Track company, role, status, and date for each application. Monitor progress through different stages such as Applied, Interview, Offer, and Rejected with color-coded status indicators and persistent storage.",
+      "features": [
+        "Add new job applications with company, role, and status",
+        "Track application status: Applied, Interview, Offer, Rejected",
+        "Delete applications and manage records",
+        "Dashboard statistics for applications, interviews, offers, and rejections",
+        "Color-coded status indicators for quick overview",
+        "Persistent storage using localStorage",
+        "Simple responsive UI"
+      ],
+      "technologies": ["JavaScript", "HTML5", "CSS3", "LocalStorage API"],
+      "techCategories": {
+        "Frontend": ["JavaScript", "HTML5", "CSS3"],
+        "Storage": ["LocalStorage API"],
+        "Tools": ["Browser APIs"]
+      },
+      "metrics": {
+        "Applications Tracked": "Unlimited",
+        "Status Stages": "Applied, Interview, Offer, Rejected",
+        "Data Persistence": "Browser localStorage",
+        "Dashboard Stats": "Real-time calculations"
+      },
+      "role": "Frontend Developer",
+      "timeline": "2026",
+      "github": "https://github.com/tarcisse22/Job-Application-Tracker"
+    }
+  ]
+}

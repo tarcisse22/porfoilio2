@@ -46,48 +46,52 @@ export default function Home() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      id: "auto-shop",
+      title: "Auto Shop Inventory Manager",
       description:
-        "Full-stack e-commerce solution with real-time inventory management and payment integration.",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      link: "#",
+        "Full-stack inventory management system for auto service shops with real-time Firebase sync and role-based access control.",
+      tags: ["React", "Firebase", "Firestore", "CSS3"],
+      link: "/project/auto-shop",
     },
     {
-      title: "Task Management App",
+      id: "health-tracker",
+      title: "HabitLoop - Daily Health Tracker",
       description:
-        "Collaborative task management tool with real-time updates and team collaboration features.",
-      tags: ["React", "Firebase", "Tailwind CSS"],
-      link: "#",
+        "Responsive habit tracking app for logging exercise, water intake, and sleep with streak calculations and weekly visualizations.",
+      tags: ["JavaScript", "HTML5", "CSS3", "LocalStorage"],
+      link: "/project/health-tracker",
     },
     {
-      title: "Analytics Dashboard",
+      id: "interview-prep",
+      title: "TechPrep - Interview Preparation Platform",
       description:
-        "Data visualization dashboard with interactive charts and real-time data processing.",
-      tags: ["React", "D3.js", "Express", "MongoDB"],
-      link: "#",
+        "Categorized question bank with 100+ curated coding problems covering arrays, trees, graphs, and dynamic programming.",
+      tags: ["JavaScript", "HTML5", "CSS3"],
+      link: "/project/interview-prep",
     },
     {
-      title: "Mobile Weather App",
+      id: "job-tracker",
+      title: "Job Application Tracker",
       description:
-        "Cross-platform weather application with location-based forecasting and notifications.",
-      tags: ["React Native", "TypeScript", "API Integration"],
-      link: "#",
+        "Dashboard for organizing job applications with status tracking, statistics, and persistent localStorage storage.",
+      tags: ["JavaScript", "HTML5", "CSS3", "LocalStorage"],
+      link: "/project/job-tracker",
     },
   ];
 
   const skills = [
     "JavaScript",
-    "TypeScript",
     "React",
-    "Node.js",
-    "Express",
-    "PostgreSQL",
-    "MongoDB",
-    "Tailwind CSS",
+    "HTML5",
+    "CSS3",
+    "Firebase",
+    "Firestore",
+    "LocalStorage",
+    "Vite",
     "Git",
-    "Docker",
-    "AWS",
+    "GitHub",
     "REST APIs",
+    "Responsive Design",
   ];
 
   return (
