@@ -190,16 +190,14 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, idx) => (
+            {projects.map((project) => (
               <Card
-                key={idx}
+                key={project.id}
                 className="group overflow-hidden hover:shadow-lg transition-all duration-300 border-border bg-card hover:bg-secondary/50 cursor-pointer"
-                onClick={() => navigate(`/project/${idx + 1}`)}
+                onClick={() => navigate(`/project/${project.id}`)}
               >
                 <div className="p-8">
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
-                    {project.title}
-                  </h3>
+                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">{project.title}</h3>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     {project.description}
                   </p>
@@ -216,7 +214,7 @@ export default function Home() {
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
-                      navigate(`/project/${idx + 1}`);
+                      navigate(`/project/${project.id}`);
                     }}
                     className="inline-flex items-center text-accent hover:text-blue-600 font-medium group/link"
                   >
@@ -263,16 +261,10 @@ export default function Home() {
               </h2>
               <div className="h-1 w-20 bg-accent rounded-full mb-8" />
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                I'm a full-stack developer with a passion for building
-                beautiful, functional web applications. With experience across
-                the entire development stack, I create solutions that are not
-                only technically sound but also user-friendly and scalable.
+                I'm a Frontend Developer and IT Support Specialist with a passion for building responsive, user-friendly web applications. I specialize in JavaScript, React, HTML5, and CSS3, creating clean, maintainable code that solves real-world problems. My background in IT support gives me a unique perspective on user experience and system reliability.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community. I believe in continuous learning and
-                staying updated with the latest industry trends.
+                I'm currently pursuing a B.S. in Computer Science at Georgia State University (GPA 3.6/4.0) and have built several full-stack projects including inventory management systems, habit trackers, and interview preparation platforms. I'm passionate about continuous learning, clean code practices, and creating seamless user experiences that make a difference.
               </p>
               <div className="flex gap-4">
                 <a

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Github, Mail } from "lucide-react";
+import { ArrowLeft, Github, Mail, ExternalLink } from "lucide-react";
 import { useRoute, useLocation } from "wouter";
 
 /**
@@ -67,6 +67,7 @@ const projectsData: Record<string, ProjectData> = {
       "Built a responsive habit tracking app enabling users to log exercise, water intake, and sleep across mobile and desktop with adaptive grid layouts and persistent localStorage state. Engineered dynamic streak calculation logic and weekly summary visualizations, driving a 3x improvement in user retention during peer testing versus static spreadsheet alternatives.",
     tags: ["JavaScript", "HTML5", "CSS3", "LocalStorage"],
     github: "https://github.com/tarcisse22/health-habit-tracker",
+    live: "https://tarcisse22.github.io/health-habit-tracker/",
     metrics: {
       "User Retention": "3x improvement vs spreadsheets",
       "Tracked Habits": "Exercise, water intake, sleep",
@@ -96,6 +97,7 @@ const projectsData: Record<string, ProjectData> = {
       "Developed a categorized question bank covering arrays, trees, graphs, dynamic programming, and system design with 100+ curated problems and difficulty tagging. Implemented client-side filtering and session-based progress tracking with 0 backend dependencies, achieving sub-50ms render performance.",
     tags: ["JavaScript", "HTML5", "CSS3"],
     github: "https://github.com/tarcisse22/Interview-Prep-App",
+    live: "https://tarcisse22.github.io/Interview-Prep-App/",
     metrics: {
       "Questions": "100+ curated problems",
       "Topics": "Arrays, Strings, Trees, Graphs, DP",
@@ -126,6 +128,7 @@ const projectsData: Record<string, ProjectData> = {
       "A job application tracker that reduces the stress of job searching by organizing all application data into one actionable dashboard. Track company, role, status, and date for each application. Monitor progress through different stages such as Applied, Interview, Offer, and Rejected with color-coded status indicators and persistent storage.",
     tags: ["JavaScript", "HTML5", "CSS3", "LocalStorage"],
     github: "https://github.com/tarcisse22/Job-Application-Tracker",
+    live: "https://tarcisse22.github.io/Job-Application-Tracker/",
     metrics: {
       "Applications": "Unlimited tracking",
       "Status Stages": "Applied, Interview, Offer, Rejected",
@@ -235,12 +238,24 @@ export default function ProjectDetail() {
                   {project.fullDescription}
                 </p>
                 <div className="flex gap-4 flex-wrap">
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button className="bg-accent hover:bg-blue-600 text-white">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        View Live Demo
+                      </Button>
+                    </a>
+                  )}
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button className="bg-accent hover:bg-blue-600 text-white">
+                    <Button variant="outline" className="border-border">
                       <Github className="mr-2 h-4 w-4" />
                       View Code
                     </Button>
