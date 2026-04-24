@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight, Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { useLocation } from "wouter";
 
 /**
  * Tech-forward developer portfolio for Tarcisse Ndjibu
@@ -19,6 +20,7 @@ import { toast } from "sonner";
  */
 
 export default function Home() {
+  const [, navigate] = useLocation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -149,6 +151,7 @@ export default function Home() {
               <Button
                 size="lg"
                 className="bg-accent hover:bg-blue-600 text-white"
+                onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
               >
                 View My Work <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -178,7 +181,8 @@ export default function Home() {
             {projects.map((project, idx) => (
               <Card
                 key={idx}
-                className="group overflow-hidden hover:shadow-lg transition-all duration-300 border-border bg-card hover:bg-secondary/50"
+                className="group overflow-hidden hover:shadow-lg transition-all duration-300 border-border bg-card hover:bg-secondary/50 cursor-pointer"
+                onClick={() => navigate(`/project/${idx + 1}`)}
               >
                 <div className="p-8">
                   <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
@@ -197,13 +201,16 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href={project.link}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      navigate(`/project/${idx + 1}`);
+                    }}
                     className="inline-flex items-center text-accent hover:text-blue-600 font-medium group/link"
                   >
                     View Project{" "}
                     <ExternalLink className="ml-2 h-4 w-4 group-hover/link:translate-x-1 transition-transform" />
-                  </a>
+                  </button>
                 </div>
               </Card>
             ))}
@@ -225,7 +232,7 @@ export default function Home() {
             {skills.map((skill, idx) => (
               <Card
                 key={idx}
-                className="p-6 text-center border-border bg-white hover:shadow-md transition-shadow"
+                className="p-6 text-center border-border bg-white hover:shadow-md transition-shadow cursor-pointer hover:bg-secondary/50"
               >
                 <p className="font-medium text-foreground">{skill}</p>
               </Card>
