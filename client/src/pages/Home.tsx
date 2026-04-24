@@ -143,8 +143,8 @@ export default function Home() {
               </span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Full-Stack Developer &<br />
-              <span className="text-accent">Problem Solver</span>
+              Frontend Developer &<br />
+              <span className="text-accent">IT Support Specialist</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
               Frontend Developer & IT Support Specialist. I build scalable web applications and solve complex technical challenges. Passionate about clean code, modern technologies, and creating seamless user experiences.
