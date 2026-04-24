@@ -147,9 +147,7 @@ export default function Home() {
               <span className="text-accent">Problem Solver</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-              I build scalable web applications and solve complex technical
-              challenges. Passionate about clean code, modern technologies, and
-              creating seamless user experiences.
+              Frontend Developer & IT Support Specialist. I build scalable web applications and solve complex technical challenges. Passionate about clean code, modern technologies, and creating seamless user experiences.
             </p>
             <div className="flex gap-4 flex-wrap">
               <Button
