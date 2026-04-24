@@ -272,7 +272,7 @@ export default function Home() {
               </p>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/tarcisse-ndjibu"
+                  href="https://github.com/tarcisse22"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-secondary hover:bg-accent hover:text-white transition-colors"

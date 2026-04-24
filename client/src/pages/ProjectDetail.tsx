@@ -273,7 +273,7 @@ export default function ProjectDetail() {
               </p>
               <div className="flex gap-4 flex-wrap">
                 <a
-                  href="https://github.com/tarcisse-ndjibu"
+                  href="https://github.com/tarcisse22"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
