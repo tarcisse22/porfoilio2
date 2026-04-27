@@ -2,7 +2,8 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "regions": ["sfo1"],
+  "installCommand": "npm install",
+  "public": true,
   "rewrites": [
     {
       "source": "/(.*)",
